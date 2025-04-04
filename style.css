@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #f5f5f5;
+    --black-color: #000;
+    --light-text: #fff;
+    --dark-text: #000;
+    --big-text: 2rem;
+    --normal-text: 1.2rem;
+    --small-text: 0.8rem;
+    --hover-color: rgb(45, 45, 45);
+    --active-color: rgb(112, 179, 112);
+    --inactive-color: rgb(218, 101, 101);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: "Roboto", sans-serif;
+    font-size: var(--big-text);
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.wrapper {
+    padding: 1rem;
+}
+
+.header {
+    height: 70px;
+    background: var(--black-color);
+    color: var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--big-text);
+    text-transform: uppercase;
+}
+
+.main {
+    height: calc(100vh - 70px);
+}
+
+.row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--normal-text);
+}
+
+.status .indicator {
+    height: 25px;
+    width: 25px;
+    background: var(--black-color);
+    border-radius: 100%;
+}
+
+.status .indicator.active {
+    background: var(--active-color);
+}
+
+.status .indicator.inactive {
+    background-color: var(--inactive-color);
+}
+
+.btn {
+    font-size: var(--small-text);
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    background: var(--black-color);
+    color: var(--light-text);
+}
+
+.btn:hover {
+    background: var(--hover-color);
+}
+
+
+.controls {
+    gap: 1rem
+}
