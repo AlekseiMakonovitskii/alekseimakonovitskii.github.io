@@ -5,6 +5,6 @@ git add .
 git commit -m "add updated"
 
 # Push to the current branch
-git push
+git push -u origin master
 
 echo "✅ Changes pushed!"
