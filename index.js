@@ -20,7 +20,11 @@ const StatusIndicatorClasses = {
 
 async function onSubscribe() {
     try {
-        await akPush.initSubscription();
+        await akPush.initSubscription(
+            {
+                email: 'example@email.com'
+            }
+        );
     } catch (error) {
         console.log(error);
     }
